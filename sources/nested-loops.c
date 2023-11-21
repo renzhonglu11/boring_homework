@@ -4,7 +4,6 @@
 
 int main() {
     
-  #if 0
  
     int matrix[200][200];
     int i = 0;
@@ -15,8 +14,8 @@ int main() {
             matrix[i][j] = rand() % 10 + 1;  
         }
     }
-#endif
 
+    #if 0
     int matrix[200][200];
     int i = 0;
     int j = 0;
@@ -26,6 +25,7 @@ int main() {
             matrix[i][j] = rand() % 10 + 1;  
         }
     }
+    #endif
  
 
     return 0;
