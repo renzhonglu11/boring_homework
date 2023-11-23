@@ -48,7 +48,7 @@ int main()
         }
     }
 
-
+#if 0
     for (ii = 0; ii < SIZE; ii += BLOCK_SIZE) {
         for (jj = 0; jj < SIZE; jj += BLOCK_SIZE) {
             for (kk = 0; kk < SIZE; kk += BLOCK_SIZE) {
@@ -68,8 +68,8 @@ int main()
         }
     }
 
+#endif
 
-#if 0
     for (i = 0; i < SIZE; i++)
     {
         for (j = 0; j < SIZE; j++)
@@ -82,6 +82,6 @@ int main()
             }
         }
     }
-#endif
+
     return 0;
 }

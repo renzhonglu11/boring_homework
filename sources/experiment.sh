@@ -60,8 +60,8 @@
 ######################################
 # matrix-mul
 
-# sim-cache -cache:dl1 dl1:64:32:1:l -cache:il1 il1:64:32:1:l -cache:il2 none -cache:dl2 none -tlb:itlb none -tlb:dtlb none matrix-mul
-# sim-cache -cache:dl1 dl1:128:32:1:l -cache:il1 il1:128:32:1:l -cache:il2 none -cache:dl2 none -tlb:itlb none -tlb:dtlb none matrix-mul
+sim-cache -cache:dl1 dl1:64:32:1:l -cache:il1 il1:64:32:1:l -cache:il2 none -cache:dl2 none -tlb:itlb none -tlb:dtlb none matrix-mul
+sim-cache -cache:dl1 dl1:128:32:1:l -cache:il1 il1:128:32:1:l -cache:il2 none -cache:dl2 none -tlb:itlb none -tlb:dtlb none matrix-mul
 
 # sim-cache -cache:dl1 dl1:256:32:1:l -cache:il1 il1:256:32:1:l -cache:il2 none -cache:dl2 none -tlb:itlb none -tlb:dtlb none matrix-mul
 # sim-cache -cache:dl1 dl1:512:32:1:l -cache:il1 il1:512:32:1:l -cache:il2 none -cache:dl2 none -tlb:itlb none -tlb:dtlb none matrix-mul
@@ -103,7 +103,7 @@
 # level-1 only
 
 # sim-outorder -cache:dl1 dl1:128:32:1:l -cache:il1 il1:128:32:1:l -cache:il2 none -cache:dl2 none -tlb:itlb none -tlb:dtlb none nested-loops
-sim-outorder -cache:dl1 dl1:128:32:1:l -cache:il1 il1:128:32:1:l -cache:il2 none -cache:dl2 none -tlb:itlb none -tlb:dtlb none matrix-mul
+# sim-outorder -cache:dl1 dl1:128:32:1:l -cache:il1 il1:128:32:1:l -cache:il2 none -cache:dl2 none -tlb:itlb none -tlb:dtlb none matrix-mul
 
 # level-1 and level-2
 
